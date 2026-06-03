@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="773" height="768" alt="Gemini_Generated_Image_8e6oru8e6oru8e6o" src="https://github.com/user-attachments/assets/4fa9d8b8-7b6a-42f2-b0e1-be91b00ab9ed" />
+  <img width="120" height="120" alt="DotFiles" src="https://github.com/user-attachments/assets/4fa9d8b8-7b6a-42f2-b0e1-be91b00ab9ed" />
 </p>
 
 <h1 align="center">⚙️ My Dotfiles — Graphite Blue</h1>
@@ -10,8 +10,8 @@
 
 ---
 ### Preview:
+<img width="1366" height="768" alt="imagen" src="https://github.com/user-attachments/assets/62799d1a-62e6-4e21-b1dd-5afa95d92db4" />
 
-<img width="1366" height="768" alt="imagen" src="https://github.com/user-attachments/assets/a5dd1a9e-13f0-4029-9fbf-46d993fe82ff" />
 
 
 # Desktop:
@@ -36,3 +36,4 @@
 - Graphite Blue GTK Theme
 - Tela Circle Icons
 - Bibata Modern Classic Cursor
+- CasKaydiaCove NerdFont
