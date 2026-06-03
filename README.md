@@ -5,7 +5,8 @@
 <h1 align="center">⚙️ My Dotfiles — Graphite Blue</h1>
 
 <p align="center">
-  <strong>My automated and customized development environment.</strong>
+  <strong>My automated and customized development environment.
+     Dotfiles Made for Debian-based distributions.</strong>
 </p>
 
 ---
@@ -14,9 +15,11 @@
 
 
 
+
 # Desktop:
 - *Cinnamon* (Although it works on other desktops with GTK)
-- ## dependencies:
+
+# Dependencies:
 - Git
 - Curl
 - Wget
@@ -37,3 +40,5 @@
 - Tela Circle Icons
 - Bibata Modern Classic Cursor
 - CasKaydiaCove NerdFont
+
+# Instalation: Exec -> `./install.sh` (will install dependencies and programs)
