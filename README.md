@@ -16,6 +16,7 @@
 
 # Desktop:
 - *Cinnamon* (Although it works on other desktops with GTK)
+
 - ## dependencies:
 - Git
 - Curl
@@ -37,3 +38,5 @@
 - Tela Circle Icons
 - Bibata Modern Classic Cursor
 - CasKaydiaCove NerdFont
+
+# Instalation: Exec -> `./install.sh` (will install dependencies and programs)
