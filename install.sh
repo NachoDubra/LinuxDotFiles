@@ -132,7 +132,7 @@ https://github.com/vinceliuice/Graphite-gtk-theme.git \
 /tmp/Graphite-gtk-theme
 
 cd /tmp/Graphite-gtk-theme
-./install.sh -t blue -c dark -l --round 15px
+./install.sh -t blue -c dark -s compact -l --round 15px
 
 echo "=== Tela Circle Icons ==="
 cd /tmp
@@ -149,12 +149,29 @@ https://github.com/ful1e5/Bibata_Cursor.git \
 mkdir -p ~/.icons
 cp -r /tmp/Bibata_Cursor/Bibata-Modern-Classic ~/.icons/ || true
 
+
+echo "=== Moviendo iconos y wallpaper ==="
+mkdir -p ~/Imagenes
+cp wallpaper.jpg ~/Imagenes && cp userIcon.svg ~/Imagenes
+cp refresh.png switch.png ~/Imagenes
+
+echo "=== Copiando Configs ==="
+cp -r .config ~/
+cp .zshrc .nanorc .p10k.zsh ~/
+
 echo "=== Limpieza ==="
 sudo apt autoremove -y
 
 echo ""
 echo "======================================="
 echo "Instalación finalizada."
-echo "Reinicia la sesión."
-echo "Ejecuta: p10k configure"
+read -rp "¿Quieres reiniciar para aplicar todos los cambios? [s/N]: " reinicio
+
+if [[ "$reinicio" =~ ^[SsYy]$ ]]; then
+    echo "Reiniciando en 3 segundos..."
+    sleep 3
+    systemctl reboot
+else
+    echo "Espero lo disfrutes!!.."
+fi
 echo "======================================="
