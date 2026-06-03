@@ -1,0 +1,7 @@
+# This file is created by ibus-daemon, please do not modify it.
+# This file allows processes on the machine to find the
+# ibus session bus with the below address.
+# If the IBUS_ADDRESS environment variable is set, it will
+# be used rather than this file.
+IBUS_ADDRESS=unix:path=/home/nachodubra/.cache/ibus/dbus-qXYPy7AU,guid=0b7c72e9eeb9411a7f7e86076a2043ab
+IBUS_DAEMON_PID=1666

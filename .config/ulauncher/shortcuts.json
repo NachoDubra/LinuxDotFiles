@@ -1,0 +1,52 @@
+{
+    "8f4982f3-84d1-450f-8a04-28056183f444": {
+        "id": "8f4982f3-84d1-450f-8a04-28056183f444",
+        "name": "Google Search",
+        "keyword": "g",
+        "cmd": "https://google.com/search?q=%s",
+        "icon": "/usr/share/ulauncher/media/google-search-icon.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1779909990.8321164
+    },
+    "59fe87ed-8555-4037-a7be-fbe7f512557b": {
+        "id": "59fe87ed-8555-4037-a7be-fbe7f512557b",
+        "name": "Stack Overflow",
+        "keyword": "so",
+        "cmd": "https://stackoverflow.com/search?q=%s",
+        "icon": "/usr/share/ulauncher/media/stackoverflow-icon.svg",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1779909990.8321822
+    },
+    "c33f2bba-69f3-43c8-97de-1e8235a1f5d9": {
+        "id": "c33f2bba-69f3-43c8-97de-1e8235a1f5d9",
+        "name": "Wikipedia",
+        "keyword": "wiki",
+        "cmd": "https://en.wikipedia.org/wiki/%s",
+        "icon": "/usr/share/ulauncher/media/wikipedia-icon.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1779909990.8322244
+    },
+    "2b15cd69-601b-445a-b467-2d9c55f52ec0": {
+        "id": "2b15cd69-601b-445a-b467-2d9c55f52ec0",
+        "name": "Reiniciar pc",
+        "keyword": "reboot",
+        "cmd": "systemctl  reboot",
+        "icon": "~/Im\u00e1genes/refresh.png",
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1779923968.9480433
+    },
+    "5bf3c875-d663-4f50-8f8b-0a43eefb7a40": {
+        "id": "5bf3c875-d663-4f50-8f8b-0a43eefb7a40",
+        "name": "Apagar pc",
+        "keyword": "poff",
+        "cmd": "systemctl poweroff",
+        "icon": "~/Im\u00e1genes/switch.png",
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1779934902.9386985
+    }
+}

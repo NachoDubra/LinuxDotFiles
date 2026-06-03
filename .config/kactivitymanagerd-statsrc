@@ -1,0 +1,17 @@
+[Favorites-org.kde.plasma.kicker.favorites.instance-104-04ad4240-a372-48c6-af9f-157512f42bd2]
+ordering=applications:org.kde.dolphin.desktop,applications:org.manjaro.pamac.manager.desktop,applications:systemsettings.desktop
+
+[Favorites-org.kde.plasma.kicker.favorites.instance-104-global]
+ordering=applications:org.kde.dolphin.desktop,applications:org.manjaro.pamac.manager.desktop,applications:systemsettings.desktop
+
+[Favorites-org.kde.plasma.kickoff.favorites.instance-3-04ad4240-a372-48c6-af9f-157512f42bd2]
+ordering=preferred://browser,org.kde.dolphin.desktop,org.kde.elisa.desktop,org.kde.konsole.desktop,org.manjaro.pamac.manager.desktop,systemsettings.desktop
+
+[Favorites-org.kde.plasma.kickoff.favorites.instance-3-global]
+ordering=preferred://browser,org.kde.dolphin.desktop,org.kde.elisa.desktop,org.kde.konsole.desktop,org.manjaro.pamac.manager.desktop,systemsettings.desktop
+
+[Favorites-org.kde.plasma.kickoff.favorites.instance-79-04ad4240-a372-48c6-af9f-157512f42bd2]
+ordering=preferred://browser,applications:org.kde.dolphin.desktop,applications:org.kde.elisa.desktop,applications:org.manjaro.pamac.manager.desktop,applications:systemsettings.desktop
+
+[Favorites-org.kde.plasma.kickoff.favorites.instance-79-global]
+ordering=preferred://browser,applications:org.kde.dolphin.desktop,applications:org.kde.elisa.desktop,applications:org.manjaro.pamac.manager.desktop,applications:systemsettings.desktop

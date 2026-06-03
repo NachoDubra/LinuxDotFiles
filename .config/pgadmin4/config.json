@@ -1,0 +1,14 @@
+{
+	"fixedPort": false,
+	"portNo": 5050,
+	"connectionTimeout": 180,
+	"openDocsInBrowser": true,
+	"bounds": {
+		"x": 0,
+		"y": 76,
+		"width": 1024,
+		"height": 692
+	},
+	"update_downloading": false,
+	"update_downloaded": false
+}

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=ulauncher --hide-window
+X-GNOME-Autostart-enabled=true
+NoDisplay=false
+Hidden=false
+Name[es_AR]=Ulauncher
+Comment[es_AR]=Sin descripción
+X-GNOME-Autostart-Delay=0

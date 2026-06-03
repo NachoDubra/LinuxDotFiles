@@ -1,0 +1,53 @@
+## ====================================================================
+## OPCIONES DE COMPORTAMIENTO (Compatibilidad total)
+## ====================================================================
+
+## Muestra la posición del cursor (línea, columna, carácter) abajo
+set constantshow
+
+
+## Habilita el uso del mouse para posicionar el cursor y hacer scroll
+set mouse
+
+## Autocompletado de tabuladores a espacios y tamaño de tabulación
+set tabstospaces
+set tabsize 4
+
+## Ajuste de línea automático visual
+set softwrap
+
+## Guarda el historial de búsquedas y posición de archivos anteriores
+set historylog
+set positionlog
+
+## ====================================================================
+## ATAJOS DE TECLADO PERSONALIZADOS
+## ====================================================================
+
+## Hace que la tecla Supr (Delete) borre el texto seleccionado
+bind del delete main
+bind ^X cut main
+
+## OPCIONAL: Si quieres que Ctrl+C copie y Ctrl+V pegue como en el resto del sistema
+bind ^C copy main
+bind ^V paste main
+
+## ====================================================================
+## COLORS (Graphite-Blue)
+## ====================================================================
+
+## Barra de título (Arriba) - Texto blanco brillante sobre fondo azul
+set titlecolor brightwhite,blue
+
+## Barra de estado (Abajo) y mensajes de error
+set statuscolor brightwhite,blue
+set errorcolor brightwhite,red
+
+## Números de línea - Blanco brillante (Máxima visibilidad a la izquierda)
+set numbercolor brightwhite
+
+## El cursor y texto seleccionado
+set selectedcolor brightwhite,blue
+
+## Interfaz de preguntas/prompts
+set promptcolor brightcyan,black

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=ksuperkey -e 'Super_L=Alt_L|F11'
+X-GNOME-Autostart-enabled=true
+NoDisplay=false
+Hidden=false
+Name[es_AR]=UlauncherKey
+Comment[es_AR]=Sin descripción
+X-GNOME-Autostart-Delay=0

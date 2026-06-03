@@ -1,0 +1,12 @@
+[General]
+LastUsedVersion=210800
+
+[MainWindow]
+MenuBar=Disabled
+
+[Recent Files]
+File1[$e]=$HOME/Imágenes/linux-brands-solid-full.png
+Name1[$e]=linux-brands-solid-full.png
+
+[SideBar]
+InformationSplitterSizes=0,0
