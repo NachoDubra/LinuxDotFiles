@@ -79,7 +79,7 @@ read -rp "¿Instalar Obsidian? [s/N]: " instalar_obsidian
 if [[ "$instalar_obsidian" =~ ^[SsYy]$ ]]; then
     echo "Instalando Obsidian..."
 if [ ! -f obsidian_1.12.7_amd64.deb ]; then
-    wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.7/obsidian_1.12.7_am64.deb
+    wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.7/obsidian_1.12.7_amd64.deb
 fi
     sudo apt install -y ./obsidian_1.12.7_amd64.deb
 else
