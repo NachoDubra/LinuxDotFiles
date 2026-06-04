@@ -28,10 +28,15 @@ sudo apt install -y \
     alacritty
 
 echo "=== Ulauncher ==="
-wget https://github.com/Ulauncher/Ulauncher/releases/download/5.15.15/ulauncher_5.15.15_all.deb
+if [ ! -f ulauncher_5.15.15_all.deb ]; then
+    wget https://github.com/Ulauncher/Ulauncher/releases/download/5.15.15/ulauncher_5.15.15_all.deb
+fi
 sudo apt install -y ./ulauncher_5.15.15_all.deb
 
 echo "=== ksuperkey ==="
+if [ ! -d /tmp/ksuperkey ]; then
+    git clone https://github.com/hanschen/ksuperkey.git /tmp/ksuperkey
+fi
 (sudo apt-get install -y gcc make libx11-dev libxtst-dev pkg-config && cd /tmp && git clone https://github.com/hanschen/ksuperkey.git && cd ksuperkey && make && sudo make install)
 
 echo "=== Docker ==="
@@ -73,7 +78,10 @@ read -rp "¿Instalar Obsidian? [s/N]: " instalar_obsidian
 
 if [[ "$instalar_obsidian" =~ ^[SsYy]$ ]]; then
     echo "Instalando Obsidian..."
-    wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.7/obsidian_1.12.7_amd64.deb
+if [ ! -f obsidian_1.12.7_amd
+64.deb ]; then
+    wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.7/obsidian_1.12.7_am64.deb
+fi
     sudo apt install -y ./obsidian_1.12.7_amd64.deb
 else
     echo "Saltando Obsidian."
@@ -95,7 +103,7 @@ read -rp "¿Instalar pgAdmin4? [s/N]: " instalar_pgadmin
 
 if [[ "$instalar_pgadmin" =~ ^[SsYy]$ ]]; then
     echo "Instalando pgAdmin4..."
-    
+
     curl -fsS https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo gpg --dearmor -o /usr/share/keyrings/packages-pgadmin-org.gpg
 
     echo "deb [signed-by=/usr/share/keyrings/packages-pgadmin-org.gpg] https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" | \
@@ -131,19 +139,29 @@ mkdir -p ~/.local/share/fonts
 (cd /tmp && wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/CascadiaCode.zip && unzip -o CascadiaCode.zip -d ~/.local/share/fonts && fc-cache -fv) || echo "Error instalando fuente"
 
 echo "=== Graphite GTK Theme ==="
-rm -rf /tmp/Graphite-gtk-theme
+
+if [ ! -d /tmp/Graphite-gtk-theme ]; then
+    git clone --depth=1 https://github.com/vinceliuice/Graphite-gtk-theme.git /tmp/Graphite-gtk-theme
+fi
 
 mkdir -p ~/.themes
 
-(git clone --depth=1 https://github.com/vinceliuice/Graphite-gtk-theme.git /tmp/Graphite-gtk-theme && cd /tmp/Graphite-gtk-theme && ./install.sh -t blue -c dark -s compact -l --round 15px)
+(cd /tmp/Graphite-gtk-theme && ./install.sh -t blue -c dark -s compact -l --round 15px)
 
 echo "=== Tela Circle Icons ==="
-rm -rf /tmp/Tela-circle-icon-theme
-(cd /tmp && git clone https://github.com/vinceliuice/Tela-circle-icon-theme.git && cd Tela-circle-icon-theme && ./install.sh blue)
+
+if [ ! -d /tmp/Tela-circle-icon-theme ]; then
+    git clone https://github.com/vinceliuice/Tela-circle-icon-theme.git /tmp/Tela-circle-icon-theme 
+fi
+
+(cd /tmp/Tela-circle-icon-theme && ./install.sh blue)
 
 echo "=== Bibata Modern Classic Cursor ==="
-rm -rf /tmp/Bibata_Cursor
-(git clone --depth=1 https://github.com/ful1e5/Bibata_Cursor.git /tmp/Bibata_Cursor && mkdir -p ~/.icons && cp -r /tmp/Bibata_Cursor/Bibata-Modern-Classic ~/.icons/)
+
+if [ ! -d /tmp/Bibata_Cursor ]; then
+    git clone --depth=1 https://github.com/ful1e5/Bibata_Cursor.git /tmp/Bibata_Cursor
+fi
+(mkdir -p ~/.icons && cp -r /tmp/Bibata_Cursor/Bibata-Modern-Classic ~/.icons/)
 
 echo "=== Aplicando config firefox ==="
 
