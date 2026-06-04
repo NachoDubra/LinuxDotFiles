@@ -29,7 +29,7 @@ sudo apt install -y \
 
 echo "=== Ulauncher ==="
 wget https://github.com/Ulauncher/Ulauncher/releases/download/5.15.15/ulauncher_5.15.15_all.deb
-sudo apt install -y ulauncher_5.15.15_all.deb
+sudo apt install -y ./ulauncher_5.15.15_all.deb
 
 echo "=== ksuperkey ==="
 (sudo apt-get install -y gcc make libx11-dev libxtst-dev pkg-config && cd /tmp && git clone https://github.com/hanschen/ksuperkey.git && cd ksuperkey && make && sudo make install)
@@ -74,7 +74,7 @@ read -rp "¿Instalar Obsidian? [s/N]: " instalar_obsidian
 if [[ "$instalar_obsidian" =~ ^[SsYy]$ ]]; then
     echo "Instalando Obsidian..."
     wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.7/obsidian_1.12.7_amd64.deb
-    sudo apt install -y obsidian_1.12.7_amd64.deb
+    sudo apt install -y ./obsidian_1.12.7_amd64.deb
 else
     echo "Saltando Obsidian."
 fi
