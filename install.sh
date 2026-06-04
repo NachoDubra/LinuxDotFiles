@@ -159,7 +159,7 @@ fi
 echo "=== Bibata Modern Classic Cursor ==="
 
 if [ ! -f /tmp/Bibata-Modern-Classic.tar.xz ]; then
-    wget https://github.com/ful1e5/Bibata_Cursor/releases/download/v2.0.7/Bibata-Modern-Classic.tar.xz /tmp/Bibata-Modern-Classic.tar.xz
+   (cd /tmp && wget https://github.com/ful1e5/Bibata_Cursor/releases/download/v2.0.7/Bibata-Modern-Classic.tar.xz)
 fi
 (tar -xvf /tmp/Bibata-Modern-Classic.tar.xz && mkdir -p ~/.icons && cp -r /tmp/Bibata-Modern-Classic  ~/.icons/)
 
