@@ -158,10 +158,10 @@ fi
 
 echo "=== Bibata Modern Classic Cursor ==="
 
-if [ ! -d /tmp/Bibata_Cursor ]; then
-    git clone --depth=1 https://github.com/ful1e5/Bibata_Cursor.git /tmp/Bibata_Cursor
+if [ ! -f /tmp/Bibata-Modern-Classic.tar.xz ]; then
+    wget https://github.com/ful1e5/Bibata_Cursor/releases/download/v2.0.7/Bibata-Modern-Classic.tar.xz
 fi
-(mkdir -p ~/.icons && cp -r /tmp/Bibata_Cursor/Bibata-Modern-Classic ~/.icons/)
+(tar -xvf /tmp/Bibata-Modern-Classic.tar.xz && mkdir -p ~/.icons && cp -r /tmp/Bibata-Modern-Classic  ~/.icons/)
 
 echo "=== Aplicando config firefox ==="
 
