@@ -37,7 +37,7 @@ echo "=== ksuperkey ==="
 if [ ! -d /tmp/ksuperkey ]; then
     git clone https://github.com/hanschen/ksuperkey.git /tmp/ksuperkey
 fi
-(sudo apt-get install -y gcc make libx11-dev libxtst-dev pkg-config && cd /tmp && git clone https://github.com/hanschen/ksuperkey.git && cd ksuperkey && make && sudo make install)
+(sudo apt-get install -y gcc make libx11-dev libxtst-dev pkg-config && cd /tmp && cd ksuperkey && make && sudo make install)
 
 echo "=== Docker ==="
 rm -f /etc/apt/sources.list.d/docker.*
